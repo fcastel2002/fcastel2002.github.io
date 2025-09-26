@@ -4,6 +4,8 @@ title: Guía paso a paso
 nav_order: 1
 permalink: /
 description: Estructura base para documentar el flujo completo de la guía.
+classes: guia-single
+nav_exclude: true
 ---
 
 <div class="guide-layout">
@@ -205,15 +207,34 @@ _Sugiere material externo o anexos que complementen la guía._
 </div>
 
 <style>
+body.guia-single .page,
+body.guia-single .site-main {
+  display: block;
+}
+
+body.guia-single .side-bar,
+body.guia-single .page__sidebar {
+  display: none;
+}
+
+body.guia-single .main,
+body.guia-single .page__content {
+  margin: 0 auto;
+  max-width: 72rem;
+  padding-left: clamp(1.5rem, 3vw, 3rem);
+  padding-right: clamp(1.5rem, 3vw, 3rem);
+}
+
 :root {
-  --guide-sidebar-width: 18rem;
+  --guide-sidebar-width: clamp(14rem, 25vw, 18rem);
   --guide-border-color: var(--color-border-muted, #d9d9d9);
 }
 
 .guide-layout {
   display: grid;
   grid-template-columns: minmax(12rem, var(--guide-sidebar-width)) minmax(0, 1fr);
-  gap: 2.5rem;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  margin: 0 auto;
 }
 
 .guide-toc {
@@ -228,7 +249,7 @@ _Sugiere material externo o anexos que complementen la guía._
 
 .guide-toc__title {
   margin-top: 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
@@ -241,7 +262,7 @@ _Sugiere material externo o anexos que complementen la guía._
 }
 
 .guide-toc__list > li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.85rem;
 }
 
 .guide-toc a {
@@ -267,6 +288,12 @@ _Sugiere material externo o anexos que complementen la guía._
 }
 
 @media (max-width: 960px) {
+  body.guia-single .main,
+  body.guia-single .page__content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   .guide-layout {
     grid-template-columns: 100%;
   }

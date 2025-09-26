@@ -8,16 +8,3 @@ Basicamente al momento de comprarme muy ilusionado una *blue pill* me topé con 
 
 Entonces, se detallaran los pasos a seguir para lograr debuggear esta placa, lo interesante es que al final vamos a poder tener nuestro codigo en VSCode, aprovechandonos de la extensión *Cortex-Debug*, además trabajar en un entorno mucho mas liviano, nos vamos a abstraer un poco de lo que es el entorno de STM para entrar un poco más en el desarrollo con cualquier microcontrolador ARM.
 
-## Navegación del sitio
-
-La versión publicada de esta guía en GitHub Pages está disponible en [https://fcastel2002.github.io/](https://fcastel2002.github.io/). Desde la página de inicio encontrarás accesos directos a todas las secciones principales:
-
-- Preparación del entorno: [`/preparacion/`](https://fcastel2002.github.io/preparacion/)
-- Configuración de herramientas: [`/configuracion/`](https://fcastel2002.github.io/configuracion/)
-- Sesiones de depuración: [`/debugger/`](https://fcastel2002.github.io/debugger/)
-- Solución de problemas: [`/solucion/`](https://fcastel2002.github.io/solucion/)
-- Recursos y anexos: [`/referencias/`](https://fcastel2002.github.io/referencias/)
-
-Si estás leyendo este repositorio directamente, recuerda que cada carpeta dentro de `docs/` contiene el contenido que se muestra en el sitio publicado.
-
-
