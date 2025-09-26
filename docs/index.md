@@ -4,7 +4,6 @@ title: Introducción
 description: Visión general de la guía para debuggear BluePill clones.
 nav_order: 1
 has_children: true
-permalink: /
 ---
 
 # Introducción
