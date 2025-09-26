@@ -1,4 +1,4 @@
 theme: jekyll-theme-minimal
 title: Guia para debuggear microcontrolador clon en placas de desarrollo BluePill usando STLINK 
 description: Guia práctica para debuggear cualquier microcontrolador ARM mediante protocolo SWD y OpenOCD.
-
+source: .
