@@ -7,11 +7,3 @@ collections:
   docs:
     permalink: "/:path/"
     output: true
-
-just_the_docs:
-  collections:
-    docs:
-      name: "Guía paso a paso"
-      nav_order: 1
-  search_enabled: true
-  nav_enabled: false
