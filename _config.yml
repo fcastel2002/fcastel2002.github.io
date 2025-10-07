@@ -2,11 +2,15 @@ title: "Guía para debuggear microcontrolador clon en placas BluePill usando STL
 description: "Guía práctica para debuggear cualquier microcontrolador ARM mediante protocolo SWD y OpenOCD."
 theme: jekyll-theme-cayman
 
-# Le decimos a Jekyll que compile también la carpeta _docs
 collections:
-  docs:
+  docs:            # <-- sin guion bajo aquí
     output: true
     permalink: "/:path/"
 
-# Fuente del sitio
-source: .
+# aplica el layout del tema a los documentos de la colección
+defaults:
+  - scope:
+      path: ""
+      type: docs
+    values:
+      layout: page
