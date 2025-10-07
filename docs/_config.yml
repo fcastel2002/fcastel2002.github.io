@@ -1,5 +1,5 @@
 title: "Guía BluePill + STLINK"
-description: "Guía práctica para debuggear microcontroladores ARM mediante SWD y OpenOCD."
+description: "Guía práctica para debuggear firmware en microprocesadores ARM mediante SWD y OpenOCD."
 remote_theme: just-the-docs/just-the-docs
 
 plugins:
