@@ -1,0 +1,34 @@
+/* Forzar modo oscuro en Jekyll Cayman */
+body {
+  background-color: #0d1117 !important;
+  color: #e6edf3 !important;
+}
+
+a, a:visited {
+  color: #58a6ff !important;
+}
+
+.page-header {
+  background-color: #161b22 !important;
+  border-bottom: 1px solid #30363d !important;
+}
+
+.main-content h1, .main-content h2, .main-content h3 {
+  color: #e6edf3 !important;
+}
+
+footer {
+  background: #161b22 !important;
+  color: #8b949e !important;
+}
+#sidebar {
+  position: fixed;
+  top: 120px;
+  left: 20px;
+  width: 220px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+.main-content {
+  margin-left: 260px;
+}

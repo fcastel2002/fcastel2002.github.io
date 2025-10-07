@@ -1,3 +1,10 @@
+<nav id="sidebar">
+- [Introducción](#introducción)
+- [Instalación](#instalación)
+- [Configuración del entorno](#configuración-del-entorno)
+- [Debug con OpenOCD](#debug-con-openocd)
+- [Solución de errores](#solución-de-errores)
+</nav>
 # Windows
 ## Entorno de trabajo
 
