@@ -1,19 +1,15 @@
-title: "Guía para debuggear microcontrolador clon en placas BluePill usando STLINK"
-description: "Guía práctica para debuggear cualquier microcontrolador ARM mediante protocolo SWD y OpenOCD."
-theme: jekyll-theme-cayman
+title: "Guía para debuggear BluePill con STLINK"
+description: "Guía práctica para debuggear ARM por SWD y OpenOCD."
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
 
-collections:
-  docs:            # <-- sin guion bajo aquí
-    output: true
-    permalink: "/:path/"
+# Modo oscuro
+color_scheme: dark
+# (opcional) agrega un toggle en la UI:
+# just_the_docs:
+#   color_scheme: dark
+#   nav_external_links_new_tab: true
 
-# aplica el layout del tema a los documentos de la colección
-defaults:
-  - scope:
-      path: ""
-      type: docs
-    values:
-      layout: page
-
-inclde:
-  - assets/css/custom/css
+# Si tu contenido está en la propia carpeta docs/ como archivos sueltos
+# el sidebar se arma con los encabezados y el front matter.
