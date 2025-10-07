@@ -1,11 +1,12 @@
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-<nav id="sidebar">
-- [Introducción](#introducción)
-- [Instalación](#instalación)
-- [Configuración del entorno](#configuración-del-entorno)
-- [Debug con OpenOCD](#debug-con-openocd)
-- [Solución de errores](#solución-de-errores)
-</nav>
+---
+title: "Guía para debuggear microcontrolador clon en BluePill con STLINK"
+nav_order: 1
+layout: default
+has_toc: true
+---
+
+# Guía para debuggear microcontrolador clon en BluePill con STLINK
+
 # Windows
 ## Entorno de trabajo
 

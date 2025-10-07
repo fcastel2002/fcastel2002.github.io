@@ -1,15 +1,18 @@
-title: "Guía para debuggear BluePill con STLINK"
-description: "Guía práctica para debuggear ARM por SWD y OpenOCD."
+title: "Guía BluePill + STLINK"
+description: "Guía práctica para debuggear microcontroladores ARM mediante SWD y OpenOCD."
 remote_theme: just-the-docs/just-the-docs
+
 plugins:
   - jekyll-remote-theme
 
-# Modo oscuro
+# Modo oscuro automático
 color_scheme: dark
-# (opcional) agrega un toggle en la UI:
-# just_the_docs:
-#   color_scheme: dark
-#   nav_external_links_new_tab: true
 
-# Si tu contenido está en la propia carpeta docs/ como archivos sueltos
-# el sidebar se arma con los encabezados y el front matter.
+# Sidebar y navegación
+just_the_docs:
+  logo: false
+  search_enabled: true
+  show_toc: true
+  heading_anchors: true
+  toc_label: "Índice"
+  toc_levels: 1..4
