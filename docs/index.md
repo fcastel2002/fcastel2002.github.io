@@ -4,10 +4,14 @@ nav_order: 1
 layout: default
 has_toc: true
 ---
+{: .no_toc }
 
-# Guía para debuggear microcontrolador clon en BluePill con STLINK
+## Índice
+{: .no_toc .text-delta }
 
-# Windows
+1. TOC
+{:toc}
+
 ## Entorno de trabajo
 
 Lo primero que vamos a hacer es setear nuestro entorno de trabajo básico.
@@ -24,7 +28,8 @@ Se recomienda que antes de comenzar a instalar las utilidades, dirigirse a la se
 3. Copiar y pegar la carpeta extraida en el disco C.
 4. Cambiarle el nombre a la carpeta a simplemente "openocd" (Evidentemente se puede crear una subcarpeta en el disco C y alli meter esta, no hay problema con eso)
 5. Entrar a la carpeta y en la carpeta "bin" copiar la ruta de acceso a la misma. Deberia quedar algo como "C:\openocd\bin".
-6. Nos vamos al buscador de Windows y buscamos las palabras clave "Variables de entorno" y nos aparecerá algo asi.![](images/img1.png) Luego clickeamos en variables de entorno![](images/img2.png) Luego clickeamos en Path de Variables del Sistema -> Editar -> Nueva/o -> Pegamos la ruta de acceso que copiamos previamente (openocd/bin).  Si da algun error, puede ser porque falten las doble comillas " al principio y al final de la ruta pegada.![](images/img3.png)
+6. Nos vamos al buscador de Windows y buscamos las palabras clave "Variables de entorno" y nos aparecerá algo asi.![](images/img1.png) Luego clickeamos en variables de entorno![](images/img2.png)
+ Luego clickeamos en Path de Variables del Sistema -> Editar -> Nueva/o -> Pegamos la ruta de acceso que copiamos previamente (openocd/bin).  Si da algun error, puede ser porque falten las doble comillas " al principio y al final de la ruta pegada.![](images/img3.png)
 ### Instalación del toolchain de GNU para CPU ARM
 
 1. Descargar de la pagina oficial de ARM el ejecutable correspondiente a **AArch32 bare-metal target (arm-none-eabi) **[Descargar ARM GNU Toolchain]([Arm GNU Toolchain Downloads – Arm Developer](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads))![](images/img4.png)
@@ -49,7 +54,9 @@ Probablemente ya este instalado, sino, descargar lo correspondiente desde la mis
 ![](images/img5.png)
 
 Nos debería quedar algo así
+
 ![](images/img6.png)
+
 ### Instalación STM32CubeMX
 Usaremos esta herramienta para generar un proyecto de tipo CMake a partir del archivo .ioc del cual podemos setear los periféricos y demás, generando código con estos periféricos funcionando, funcionará exactamente igual que en el IDE.
 **IMPORTANTE**: Si ya se tiene instalado el IDE oficial no es necesario la instalación de esta herramienta, ya que viene como parte del paquete del IDE, por lo que nos servirá igualmente
@@ -64,11 +71,12 @@ Lo más probable es que tengas el firmware del STLink desactualizado, por lo que
 Si al abrir STLink Utility o STM32CubeProgrammer (que tambien es una opción) te salen los siguientes errores.
 ![](images/img7.png)
 ![](images/img8.png) 
+
 Y dos faltantes de dlls más, entonces es porque no tenes instalado MSVC, Microsoft Visual C++ Redistributable, si es así, entonces descargar el release x86 y x64 desde 
 https://aka.ms/vs/17/release/vc_redist.x86.exe 
 https://aka.ms/vs/17/release/vc_redist.x64.exe
 Lo más probable es que ya los tengas instalado, pero por las dudas...
-Se instalaran los drivers y actualizamos al ultimo firmware.
+Se instalaran los drivers y actualizamos al ultimo firmware haciendo click en "Firmware update", donde se abre la utilidad "STLinkUpgrade" seguimos los pasos y actualizamos.
 ## Verificación antes de continuar
 
 Abrir PowerShell y escribir los siguientes comandos

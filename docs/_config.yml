@@ -9,10 +9,6 @@ plugins:
 color_scheme: dark
 
 # Sidebar y navegación
-just_the_docs:
-  logo: false
-  search_enabled: true
-  show_toc: true
-  heading_anchors: true
-  toc_label: "Índice"
-  toc_levels: 1..4
+markdown: kramdown
+kramdown:
+  toc_levels: 2..4
